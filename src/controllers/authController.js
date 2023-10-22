@@ -13,6 +13,7 @@ router.post('/register', async (req, res) => {
     const userData = req.body;
    
     await register(userData);
+    
     res.redirect('/auth/login');
 });
 
